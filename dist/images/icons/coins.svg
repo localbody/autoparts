@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 32.5C33.0965 32.5 27.5 29.7017 27.5 26.25C27.5 22.7982 33.0965 20 40 20C46.9035 20 52.5 22.7982 52.5 26.25C52.5 29.7017 46.9035 32.5 40 32.5Z" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.5 36.25C27.5 39.7017 33.0965 42.5 40 42.5C46.9035 42.5 52.5 39.7017 52.5 36.25" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 23.75C7.5 27.2017 13.0964 30 20 30C22.8146 30 25.4117 29.535 27.5012 28.75" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 32.5C7.5 35.9517 13.0964 38.75 20 38.75C22.814 38.75 25.4108 38.285 27.5 37.5005" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.5 13.75V41.25C7.5 44.7017 13.0964 47.5 20 47.5C22.8141 47.5 25.4108 47.0347 27.5 46.25" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32.5 21.25V13.75" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.5 26.25V46.25C27.5 49.7017 33.0965 52.5 40 52.5C46.9035 52.5 52.5 49.7017 52.5 46.25V26.25" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 20C13.0964 20 7.5 17.2018 7.5 13.75C7.5 10.2982 13.0964 7.5 20 7.5C26.9035 7.5 32.5 10.2982 32.5 13.75C32.5 17.2018 26.9035 20 20 20Z" stroke="#696665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

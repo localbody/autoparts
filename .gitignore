@@ -1,0 +1,30 @@
+.DS_Store
+*/**.DS_Store
+node_modules/
+Thumbs.db
+
+# ===== Node.js / npm =====
+node_modules/
+package-lock.json
+npm-debug.log*
+.yarn/
+.yarn-integrity
+
+# ===== Log / env / config =====
+.env
+.env.local
+*.log
+*.tmp
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Gulp specific (если есть кастомные папки) =====
+gulp-tmp/
+gulp-build/
+.tmp/

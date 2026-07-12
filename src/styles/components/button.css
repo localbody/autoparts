@@ -1,0 +1,32 @@
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 16px;
+    width: max-content;
+    flex-shrink: 0;
+}
+
+.button--accent {
+    padding: var(--pad20);
+    color: white;
+    background-color: var(--accent);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button--download {
+    padding-inline: 16px;
+    padding-block: 10px;
+    color: white;
+    background-color: var(--accent);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}

@@ -1,0 +1,105 @@
+:root {
+  --font-size: 14px;
+  --desktop-width: 1920px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Geometria';
+  font-weight: 300;
+  color: var(--text);
+  font-size: var(--font-size);
+  scrollbar-gutter: stable;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --font-size: 14px;
+  }
+}
+
+body {
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.body--overflow {
+  overflow: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  all: unset;
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  padding: 0px 92px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.checkbox-confirm input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-confirm label {
+  font-size: 12px;
+  line-height: 133%;
+  display: flex;
+  gap: 16px;
+}
+
+.checkbox-confirm label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  border: 1px solid white;
+  flex-shrink: 0;
+}
+
+.checkbox-confirm input[type="checkbox"]:checked+label::before {
+  background-image: url(/images/icons/check.svg);
+  background-size: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--accent);
+}

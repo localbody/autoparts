@@ -1,0 +1,116 @@
+.video {
+    display: grid;
+    gap: 20px;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 680px;
+}
+
+@media (max-width: 1599px) {
+    .video {
+        width: 100%;
+    }
+}
+
+.video--article {
+    max-width: 100%;
+}
+
+.video--article .video__content {
+    max-height: 380px;
+
+}
+
+.video__content {
+    position: relative;
+    /* max-width: 680px; */
+    width: 100%;
+    height: 100%;
+}
+
+.video__content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video__content.no-after::after {
+    content: none;
+}
+
+.video__content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video__button-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 134px;
+    height: 134px;
+    border-radius: 134px;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+}
+
+@media (max-width: 991px) {
+    .video__button-play {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.video__button-play::after {
+    content: '';
+    width: 93px;
+    height: 93px;
+    border-radius: 93px;
+    border: 1px solid white;
+    background-image: url(/images/icons/play.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+}
+
+@media (max-width: 991px) {
+    .video__button-play::after {
+        width: 73px;
+        height: 73px;
+        border-radius: 73px;
+    }
+}
+
+.video__description {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .video__description {
+        flex-direction: column;
+    }
+}
+
+.video__title {
+    font-size: 20px;
+    font-family: 'Geologica';
+    width: 100%;
+}
+
+.video__subtitle {
+    font-size: 14px;
+    line-height: 142%;
+    color: var(--dark-gray);
+    width: 100%;
+}
