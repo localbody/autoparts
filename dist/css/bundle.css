@@ -1305,11 +1305,10 @@ hr.line {
 
 .catalog__item {
     display: grid;
-
+    width: 404px;
 }
 
 .catalog__item-top {
-    max-width: 398px;
     height: 360px;
     position: relative;
 }
