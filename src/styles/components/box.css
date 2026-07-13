@@ -1,0 +1,46 @@
+.box {
+    padding: var(--pad40);
+    border-radius: 16px;
+    background-color: var(--heading);
+    color: white;
+}
+
+.box--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap40);
+}
+
+.box__icon {
+    width: max-content;
+    justify-self: flex-end;
+}
+
+.box__title {
+    white-space: nowrap;
+}
+
+.box__summa {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    padding: var(--pad12);
+    background-color: var(--accent);
+    border-radius: 8px;
+    white-space: nowrap;
+
+    width: max-content;
+}
+
+.box__wrapper {
+    display: grid;
+    gap: var(--gap20);
+}
+
+.box--grid {
+    display: grid;
+    align-content: space-between;
+}

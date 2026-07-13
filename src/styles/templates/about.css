@@ -1,0 +1,63 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap20);
+}
+
+.about__logo {
+    width: 192px;
+    height: 75px;
+    aspect-ratio: 64 / 25;
+}
+
+.about__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about__info {
+    display: grid;
+    justify-content: space-between;
+    gap: var(--gap20);
+    max-width: 549px;
+}
+
+.about__text {
+    display: grid;
+    gap: var(--gap20);
+}
+
+.about__year {
+    display: flex;
+    gap: var(--gap12);
+}
+
+.about__year-number {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+    color: var(--heading);
+}
+
+.about__year-text {}
+
+.about__images {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--gap20);
+    column-gap: var(--gap40);
+}
+
+.about__image {
+    width: 80px;
+    height: 36px;
+}
+
+.about__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

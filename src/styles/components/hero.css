@@ -30,7 +30,7 @@
 }
 
 .hero__right {
-    width: 37%;
+    width: 36%;
     display: grid;
     gap: var(--gap40);
 }

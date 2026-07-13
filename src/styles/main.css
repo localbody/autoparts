@@ -74,31 +74,3 @@ button {
   background-color: transparent;
   padding: 0;
 }
-
-.checkbox-confirm input[type="checkbox"] {
-  display: none;
-}
-
-.checkbox-confirm label {
-  font-size: 12px;
-  line-height: 133%;
-  display: flex;
-  gap: 16px;
-}
-
-.checkbox-confirm label::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 1px;
-  border: 1px solid white;
-  flex-shrink: 0;
-}
-
-.checkbox-confirm input[type="checkbox"]:checked+label::before {
-  background-image: url(/images/icons/check.svg);
-  background-size: 12px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--accent);
-}

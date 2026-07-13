@@ -1,6 +1,9 @@
 :root {
+    --pad120: 120px;
     --pad92: 92px;
     --pad60: 60px;
+    --pad40: 40px;
+    --pad32: 32px;
     --pad28: 28px;
     --pad20: 20px;
     --pad16: 16px;
@@ -11,6 +14,7 @@
     --gap40: 40px;
     --gap32: 32px;
     --gap20: 20px;
+    --gap16: 16px;
     --gap12: 12px;
     --gap8: 8px;
 }

@@ -1,0 +1,18 @@
+.certificate__image {
+    width: 479px;
+    height: 338px;
+    aspect-ratio: 231/163;
+}
+
+.certificate__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.certificate__text {
+    display: grid;
+    gap: var(--gap40);
+    padding-block: var(--pad20);
+    max-width: 400px;
+}

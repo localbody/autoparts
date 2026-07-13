@@ -19,6 +19,10 @@
     background-color: #F6F6F6;
 }
 
+.info-cards--about {
+    gap: var(--gap20);
+}
+
 .info-card__icon {
     width: 60px;
     height: 60px;

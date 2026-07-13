@@ -1,0 +1,26 @@
+.red-box {
+    border-radius: 16px;
+    background-color: var(--accent);
+    display: grid;
+    gap: var(--gap12);
+    color: white;
+    padding: var(--pad20);
+    justify-items: center;
+}
+
+.red-box--pattern {
+    background-image: url(../images/pattern.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.red-box--certificate {
+    padding: 53px 30px 0 30px;
+    min-width: 404px;
+    min-height: 338px;
+    background-image: url(../images/flower.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

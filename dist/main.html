@@ -172,6 +172,7 @@
 </div>
 
 <hr class="brake" />
+
 <!-- advantages -->
 <div class="section advantages">
   <div class="info-cards">
@@ -236,6 +237,7 @@
 </div>
 
 <hr class="brake" />
+
 <!-- brands -->
 <div class="section brands">
   <h2 class="h2 section__title">
@@ -326,6 +328,7 @@
 </div>
 
 <hr class="brake" />
+
 <!-- offer -->
 <div class="section offer section--offer">
   <div class="section__left section__left--offer">
@@ -380,6 +383,7 @@
 </div>
 
 <hr class="brake" />
+
 <!-- catalog -->
 <div class="section catalog section--catalog">
   <div class="section__wrapper section__wrapper--catalog">
@@ -392,7 +396,7 @@
       </h2>
     </div>
 
-    <div class="section__right">
+    <div class="section__right section__right--catalog">
       <div class="number-cards">
         <div class="number-card">
           <span class="number-card__title">15 000+</span>
@@ -543,136 +547,162 @@
 
 <hr class="brake" />
 
-<!--  -->
-<div class="section" hidden>
-  <h4 class="section__title">
+<!-- catalog -->
+<div class="section form section--form">
+  <h4 class="section__title section__title--form">
     Получите бесплатную консультацию менеджера, каталог товаров и оптовые прайсы
   </h4>
 
-  <form action="" class="form">
+  <form action="" class="form-get-price">
     <div class="form__wrapper">
-      <input type="text" name="name" />
-      <input type="text" name="phone" />
-      <input type="text" name="company" />
-      <select name="" id="" value="0">
-        <option value="" value="0">Какой товар вас интересует</option>
-        <option value="" value="1">Салонные фильтры</option>
-        <option value="" value="2">Тормозные диски</option>
-        <option value="" value="3">Шины</option>
-        <option value="" value="4">Щетки стеклоочистителя</option>
-        <option value="" value="5">Задние тормозные колодки</option>
-      </select>
-    </div>
-
-    <div class="form__wrapper">
-      <div class="checkbox-confirm">
-        <input type="checkbox" name="" id="form-confirm" />
-        <label for="form-confirm"
-          ><span
-            >Даю согласие на обработку моих персональных данных в соответствии с
-            условиями документов, с которыми я ознакомлен:
-            <a href="">Политика конфиденциальности</a>,
-            <a href="">Пользовательское соглашение</a></span
-          ></label
-        >
+      <p class="text14">
+        Оставьте заявку и мы отправим вам необходимые материалы
+      </p>
+      <div class="form__inner">
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="text" name="phone" placeholder="Телефон" />
+        <input type="text" name="company" placeholder="Название компании" />
+        <select name="" id="" value="0">
+          <option value="" value="0">Какой товар вас интересует</option>
+          <option value="" value="1">Салонные фильтры</option>
+          <option value="" value="2">Тормозные диски</option>
+          <option value="" value="3">Шины</option>
+          <option value="" value="4">Щетки стеклоочистителя</option>
+          <option value="" value="5">Задние тормозные колодки</option>
+        </select>
       </div>
 
-      <button class="button button--download">
-        <img src="./images/icons/download.svg" alt="" />Получить оптовый прайс
-      </button>
+      <div class="form__actions">
+        <div class="checkbox-confirm">
+          <input type="checkbox" name="" id="form-confirm" />
+          <label for="form-confirm"
+            ><span
+              >Даю согласие на обработку моих персональных данных в соответствии
+              с условиями документов, с которыми я ознакомлен:
+              <a href="">Политика конфиденциальности</a>,
+              <a href="">Пользовательское соглашение</a></span
+            ></label
+          >
+        </div>
+
+        <button class="button button--download">
+          <img src="./images/icons/download.svg" alt="" />Получить оптовый прайс
+        </button>
+      </div>
     </div>
   </form>
 
-  <div class="image">
+  <div class="form__image">
     <img src="./images/catalog.png" alt="" />
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
-  <div class="section__wrapper">
-    <span class="section__title"
-      >Посмотрите какую прибыль вы теряете каждый месяц</span
-    >
-    <span class="section__subtitle"
+
+
+<!-- calculator -->
+<div class="section calculator section--calculator">
+  <div class="section__wrapper section__wrapper--calculator">
+    <h2 class="section__title">
+      Посмотрите какую прибыль вы теряете каждый месяц
+    </h2>
+    <span class="text16 section__subtitle"
       >За пример взяты тормозные колодки (передние) для Haval Jolion 1.5T</span
     >
   </div>
 
-  <div class="box">
-    <h5 class="box__title">Стоимость</h5>
-    <div class="box__prices">
-      <div class="box__price">
-        <h4 class="box__price-summa">1 399 ₽</h4>
-        <span class="box__price-text">Опт</span>
+  <div class="calculator__row">
+    <div class="box box--flex">
+      <div class="black-box">
+        <h5 class="black-box__title">Стоимость</h5>
+        <div class="black-box__prices">
+          <div class="black-box__price">
+            <h4 class="black-box__price-summa">1 399 ₽</h4>
+            <span class="title14 black-box__price-text">Опт</span>
+          </div>
+          <div class="black-box__price">
+            <h4 class="black-box__price-summa">1 745 ₽</h4>
+            <span class="title14 black-box__price-text"
+              >Рекомендуемая цена</span
+            >
+          </div>
+        </div>
       </div>
-      <div class="box__price">
-        <h4 class="box__price-summa">1 745 ₽</h4>
-        <span class="box__price-text">Рекомендуемая цена</span>
+
+      <div class="black-box">
+        <div class="range">
+          <p class="text14 rang__title">
+            Укажите среднее количество услуг по смене тормозных колодок в месяц
+          </p>
+          <input
+            type="range"
+            name="range1"
+            id=""
+            min="10"
+            max="250"
+            step="1"
+            value=""
+          />
+          <div class="range__scale">
+            <span class="range__scale-item">10</span>
+            <span class="range__scale-item">20</span>
+            <span class="range__scale-item">30</span>
+            <span class="range__scale-item">40</span>
+            <span class="range__scale-item">50</span>
+            <span class="range__scale-item">60</span>
+            <span class="range__scale-item">80</span>
+            <span class="range__scale-item">90</span>
+            <span class="range__scale-item">100</span>
+            <span class="range__scale-item">150</span>
+            <span class="range__scale-item">200</span>
+            <span class="range__scale-item">250</span>
+          </div>
+        </div>
+
+        <div class="range">
+          <p class="text14 rang__title">
+            Укажите количества месяцев для расчета
+          </p>
+          <input type="range" name="range2" id="" min="1" max="120" step="1" />
+          <div class="range__scale">
+            <span class="range__scale-item">1</span>
+            <span class="range__scale-item">2</span>
+            <span class="range__scale-item">3</span>
+            <span class="range__scale-item">4</span>
+            <span class="range__scale-item">5</span>
+            <span class="range__scale-item">6</span>
+            <span class="range__scale-item">8</span>
+            <span class="range__scale-item">9</span>
+            <span class="range__scale-item">10</span>
+            <span class="range__scale-item">11</span>
+            <span class="range__scale-item">12</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box--grid">
+      <div class="box__icon">
+        <img src="./images/icons/coins.svg" alt="" />
+      </div>
+
+      <div class="box__wrapper">
+        <h5 class="box__title">Ваша упущенная выгода</h5>
+        <div class="box__summa">34 600 ₽</div>
       </div>
     </div>
   </div>
 
-  <div class="box">
-    <div class="range">
-      <p class="rang__title">
-        Укажите среднее количество услуг по смене тормозных колодок в месяц
-      </p>
-      <input type="range" name="range1" id="" min="0" max="11" step="1" />
-      <div class="range__scale">
-        <span class="range__scale-item">10</span>
-        <span class="range__scale-item">20</span>
-        <span class="range__scale-item">30</span>
-        <span class="range__scale-item">40</span>
-        <span class="range__scale-item">50</span>
-        <span class="range__scale-item">60</span>
-        <span class="range__scale-item">80</span>
-        <span class="range__scale-item">90</span>
-        <span class="range__scale-item">100</span>
-        <span class="range__scale-item">150</span>
-        <span class="range__scale-item">200</span>
-        <span class="range__scale-item">250</span>
-      </div>
-    </div>
-
-    <div class="range">
-      <p class="rang__title">Укажите количества месяцев для расчета</p>
-      <input type="range" name="range2" id="" min="0" max="11" step="1" />
-      <div class="range__scale">
-        <span class="range__scale-item">1</span>
-        <span class="range__scale-item">2</span>
-        <span class="range__scale-item">3</span>
-        <span class="range__scale-item">4</span>
-        <span class="range__scale-item">5</span>
-        <span class="range__scale-item">6</span>
-        <span class="range__scale-item">8</span>
-        <span class="range__scale-item">9</span>
-        <span class="range__scale-item">10</span>
-        <span class="range__scale-item">11</span>
-        <span class="range__scale-item">12</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="box">
-    <div class="box__icon">
-      <img src="./images/icons/coins.svg" alt="" />
-    </div>
-
-    <div class="box__wrapper">
-      <div class="box__title">Ваша упущенная выгода</div>
-      <div class="box__summa">34 600 ₽</div>
-    </div>
-  </div>
-
-  <div class="box">
+  <div class="box box--flex">
     <h5 class="box__title">Получите оптовый прайс на запчасти прямо сейчас</h5>
     <a class="button button--white" href=""
-      ><img src="./images/icon/download--white.svg" alt="" /> Получить прайс</a
+      ><img src="./images/icons/download--white.svg" alt="" /> Получить прайс</a
     >
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
+
+
+<!-- video -->
+<hr class="brake" />
+<div class="section section--video">
   <div class="video">
     <div class="video__content">
       <button class="video__button-play"></button>
@@ -684,9 +714,12 @@
     </div>
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
-  <div class="section__left">
+
+<hr class="brake" />
+
+<!-- about -->
+<div class="section section--about">
+  <div class="section__left section__left--about">
     <h2 class="section__title">О компании</h2>
     <div class="about">
       <div class="about__logo">
@@ -695,8 +728,11 @@
 
       <div class="about__info">
         <div class="about__text">
-          <div class="about__year">2015</div>
-          <p>
+          <div class="about__year">
+            <span class="about__year-number">2015</span
+            ><span class="about__year-text text16">год основания</span>
+          </div>
+          <p class="title16">
             Международная корпорация KZMall успешно развивается на мировом рынке
             автозапчастей. И предлагает российскому потребителю надежные решения
             для автомобилей.
@@ -738,15 +774,15 @@
       </div>
     </div>
   </div>
-  <div class="section__right">
-    <div class="info-cards">
+  <div class="section__right section__right--about">
+    <div class="info-cards info-cards--about">
       <div class="info-card">
         <div class="info-card__icon">
           <img src="./images/icons/ok.svg" alt="" />
         </div>
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Надежность</h5>
-          <p class="text16 info-card__subtitle">
+          <p class="text14 info-card__subtitle">
             Строгий контроль качества на всех этапах производства для стабильной
             работы и безопасности
           </p>
@@ -759,7 +795,7 @@
         </div>
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Долговечность</h5>
-          <p class="text16 info-card__subtitle">
+          <p class="text14 info-card__subtitle">
             Премиальные материалы и передовые технологии обеспечивают длительный
             срок службы.
           </p>
@@ -772,20 +808,22 @@
         </div>
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Проверено</h5>
-          <p class="text16 info-card__subtitle">
+          <p class="text14 info-card__subtitle">
             Продукция протестирована в суровых климатических условиях России и
             СНГ
           </p>
         </div>
       </div>
+    </div>
 
+    <div class="info-cards info-cards--about">
       <div class="info-card">
         <div class="info-card__icon">
           <img src="./images/icons/globus.svg" alt="" />
         </div>
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Глобальные поставки</h5>
-          <p class="text16 info-card__subtitle">
+          <p class="text14 info-card__subtitle">
             Продукция экспортируется в 160+ стран и получила высокие оценки
             партнеров
           </p>
@@ -798,7 +836,7 @@
         </div>
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Гарантированное качество</h5>
-          <p class="text16 info-card__subtitle">
+          <p class="text14 info-card__subtitle">
             Международные сертификаты: подтверждают соответствие мировым
             стандартам
           </p>
@@ -807,18 +845,21 @@
     </div>
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
-  <div class="section__left">
+
+<hr class="brake" />
+
+<!-- supplies -->
+<div class="section supplies section--supplies">
+  <div class="section__left section__left--supplies">
     <h2 class="section__title">Прямые поставки с завода, а не контрафакт</h2>
-    <div class="box">
-      <div class="box__image">
+    <div class="red-box red-box--pattern">
+      <div class="red-box__image">
         <img src="./images/icons/target.svg" alt="" />
-        <h5 class="box__title">Надежный партнер для Вашего бизнеса</h5>
       </div>
+      <h5 class="red-box__title">Надежный партнер для Вашего бизнеса</h5>
     </div>
   </div>
-  <div class="section__right">
+  <div class="section__right section__right--supplies text16">
     <p>
       На рынке автозапчастей доминирует проблема контрафакта: по оценкам
       экспертов, его доля достигает 30–40%. Статистика среди СТО выглядит так:
@@ -839,7 +880,7 @@
       как Bosch, NGK и Denso.
     </p>
 
-    <p>
+    <p class="text--important">
       Наша компания является официальным дистрибьютором международной корпорации
       KZMALL AUTO PARTS, которая выпускает автозапчасти под брендами: INVOVIC,
       KBASE, KLONG, KTOP, KZWON, Q-CLEANN P+
@@ -854,15 +895,18 @@
     </p>
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
+
+<hr class="brake" />
+
+<!-- certificate -->
+<div class="section certificate section--certificate">
   <div class="section__left">
     <div class="certificate__image">
       <img src="./images/certificate.png" alt="" />
     </div>
   </div>
-  <div class="section__right">
-    <div class="section__wrapper">
+  <div class="section__right section__right--certificate">
+    <div class="certificate__text">
       <h4 class="section__title">
         Мы являемся официальным представителем корпорации KZMall в РФ
       </h4>
@@ -874,14 +918,17 @@
         подлинности
       </p>
     </div>
-    <div class="box">
-      <h5 class="box__title">
+    <div class="red-box red-box--certificate">
+      <h5 class="red-box__title">
         Мы даём гарантию подлинности и готовы заменить брак
       </h5>
     </div>
   </div>
 </div>
-<!--  -->
+
+<hr class="brake" />
+
+<!-- KTOP -->
 <div class="section" hidden>
   <h2 class="section__title">Аккумуляторы KTOP</h2>
   <span class="tag">Официальный дистрибьютор</span>
@@ -1049,13 +1096,17 @@
     </div>
   </div>
 </div>
-<!--  -->
+
+<hr class="brake" />
+
+<!-- INVOVIC -->
 <div class="section" hidden>
   <h2 class="section__title">Автомобильные шины INVOVIC</h2>
   <span class="tag">Официальный дистрибьютор</span>
 
   <div class="section__wrapper">
     <div class="section__left"></div>
+
     <div class="section__right">
       <div class="section__images">
         <div class="brand__image">
@@ -1071,7 +1122,10 @@
     </div>
   </div>
 </div>
-<!--  -->
+
+<hr class="brake" />
+
+<!-- KBASE -->
 <div class="section" hidden>
   <h2 class="section__title">Амортизаторы KBASE</h2>
   <span class="tag">Официальный дистрибьютор</span>
@@ -1167,16 +1221,20 @@
     </div>
   </div>
 </div>
-<!--  -->
-<div class="section" hidden>
+
+<hr class="brake" />
+
+<!-- faq -->
+<div class="section faq section--faq">
   <h2 class="section__title">Вопросы, которые обычно задают</h2>
+
   <ul class="faq__items">
     <li class="faq__item faq__item--active">
-      <span class="faq__title"
-        >Китайские запчасти — это подделка, они быстро ломаются</span
-      >
+      <h5 class="faq__title">
+        Китайские запчасти — это подделка, они быстро ломаются
+      </h5>
       <div class="faq__content">
-        <p class="text">
+        <p class="text16">
           Мы являемся официальным дистрибьютором завода. Мы предоставляем
           сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
           Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
@@ -1185,12 +1243,82 @@
       </div>
     </li>
     <li class="faq__item">
-      <span class="faq__title"
-        >Мы опасаемся, что китайские аналоги могут привести к повторным
-        обращениям клиентов</span
-      >
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
       <div class="faq__content">
-        <p class="text">
+        <p class="text16">
+          Мы являемся официальным дистрибьютором завода. Мы предоставляем
+          сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
+          Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
+          — ресурс составил 30 000 км без нареканий.
+        </p>
+      </div>
+    </li>
+    <li class="faq__item">
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
+      <div class="faq__content">
+        <p class="text16">
+          Мы являемся официальным дистрибьютором завода. Мы предоставляем
+          сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
+          Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
+          — ресурс составил 30 000 км без нареканий.
+        </p>
+      </div>
+    </li>
+    <li class="faq__item">
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
+      <div class="faq__content">
+        <p class="text16">
+          Мы являемся официальным дистрибьютором завода. Мы предоставляем
+          сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
+          Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
+          — ресурс составил 30 000 км без нареканий.
+        </p>
+      </div>
+    </li>
+    <li class="faq__item">
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
+      <div class="faq__content">
+        <p class="text16">
+          Мы являемся официальным дистрибьютором завода. Мы предоставляем
+          сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
+          Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
+          — ресурс составил 30 000 км без нареканий.
+        </p>
+      </div>
+    </li>
+    <li class="faq__item">
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
+      <div class="faq__content">
+        <p class="text16">
+          Мы являемся официальным дистрибьютором завода. Мы предоставляем
+          сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
+          Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
+          — ресурс составил 30 000 км без нареканий.
+        </p>
+      </div>
+    </li>
+    <li class="faq__item">
+      <h5 class="faq__title">
+        Мы опасаемся, что китайские аналоги могут привести к повторным
+        обращениям клиентов
+      </h5>
+      <div class="faq__content">
+        <p class="text16">
           Мы являемся официальным дистрибьютором завода. Мы предоставляем
           сертификаты качества (ISO, ТР ТС) и гарантию возврата/обмена.
           Например, СТО «Авто-Сервис» сэкономила 35% на тормозных дисках Kzmall
@@ -1200,6 +1328,7 @@
     </li>
   </ul>
 </div>
+
 
     <!-- footer -->
     <div class="footer">

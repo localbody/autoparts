@@ -1,0 +1,5 @@
+.supplies .text--important {
+    color: var(--heading);
+    margin-block: 1em;
+    font-weight: 500;
+}

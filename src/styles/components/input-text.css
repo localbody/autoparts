@@ -1,0 +1,15 @@
+input[type="text"] {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 10px 16px;
+    max-width: 300px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--heading);
+}
+
+input[type="text"]::placeholder {
+    color: var(--text);
+}

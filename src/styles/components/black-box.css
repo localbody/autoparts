@@ -1,0 +1,29 @@
+.black-box {
+    padding: var(--pad32);
+    border-radius: 20px;
+    background-color: #1A1C20;
+    color: white;
+
+    min-height: 312px;
+    min-width: 364px;
+
+    display: grid;
+    align-content: space-between;
+}
+
+.black-box__prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.black-box__price {
+    display: grid;
+    gap: var(-gap12);
+}
+
+.black-box__price-text {
+    padding: 4px;
+    border-radius: 8px;
+    background-color: #26292F;
+}

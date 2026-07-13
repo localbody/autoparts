@@ -31,3 +31,14 @@
     font-weight: 500;
     line-height: 140%;
 }
+
+.button--white {
+    color: white;
+    border: 2px solid white;
+    padding-inline: 16px;
+    padding-block: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}

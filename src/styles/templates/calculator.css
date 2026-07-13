@@ -1,0 +1,5 @@
+.calculator__row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap20);
+}

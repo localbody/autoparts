@@ -1,0 +1,115 @@
+:root {
+    --thumb-height: 20px;
+    --track-height: 4px;
+    --thumb-color: var(--accent);
+    --track-color: rgba(229, 35, 48, 0.38);
+    --track-fill: var(--accent);
+}
+
+.range {
+    min-width: 728px;
+    color: white;
+
+    display: grid;
+    gap: var(--gap12);
+}
+
+.range__scale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Общие стили для всех браузеров */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: 100px;
+    outline: none;
+    margin: 12px 0;
+}
+
+/* Ползунок (thumb) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--thumb-height);
+    height: var(--thumb-height);
+    background: var(--thumb-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: var(--thumb-height);
+    height: var(--thumb-height);
+    background: var(--thumb-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="range"]::-ms-thumb {
+    width: var(--thumb-height);
+    height: var(--thumb-height);
+    background: var(--thumb-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Трек (линия) */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: 100px;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: 100px;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: 100px;
+    border: none;
+}
+
+/* Заполненная часть трека (для Firefox и IE) */
+input[type="range"]::-moz-range-progress {
+    width: 100%;
+    height: var(--track-height);
+    background: var(--track-fill);
+    border-radius: 100px;
+}
+
+input[type="range"]::-ms-fill {
+    background: var(--track-fill);
+    border-radius: 100px;
+}
+
+/* Эффекты при наведении */
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: var(--track-fill);
+
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    background: var(--track-fill);
+
+}
+
+input[type="range"]:hover::-ms-thumb {
+    background: var(--track-fill);
+
+}

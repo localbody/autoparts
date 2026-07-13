@@ -1,0 +1,60 @@
+.form {
+    position: relative;
+}
+
+.form-get-price {
+    width: 100%;
+    padding: var(--pad32);
+    background-color: white;
+    border-radius: 16px;
+    display: grid;
+    gap: var(--gap20);
+    position: relative;
+}
+
+.form__wrapper {
+    display: grid;
+    gap: var(--gap20);
+}
+
+.form__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap20);
+}
+
+.form-get-price .checkbox-confirm {
+    max-width: 586px;
+}
+
+.form-get-price a {
+    color: var(--heading);
+}
+
+.form-get-price .form__wrapper {
+    margin-right: 444px;
+}
+
+.form__image {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+}
+
+.form-get-price::after {
+    content: '';
+    border-radius: 0 0 20px 20px;
+    background: rgba(255, 255, 255, 0.20);
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    right: 40px;
+    /* width: 100%; */
+}
