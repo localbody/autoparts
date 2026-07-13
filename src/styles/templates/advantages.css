@@ -1,0 +1,6 @@
+.advantages {
+    padding-inline: var(--pad92);
+    padding-block: var(--pad60);
+    background-color: var(--accent);
+    background-image: url(../images/car-front.png);
+}

@@ -1,0 +1,28 @@
+.number-card {
+    display: grid;
+    gap: var(--gap12);
+    color: var(--heading);
+}
+
+.number-card__title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.number-card__subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    white-space: nowrap;
+}
+
+.number-cards {
+    display: flex;
+    gap: var(--gap40);
+}
+
+.number-cards--catalog {}
