@@ -16,7 +16,6 @@ const cssFilesOrder = [
   "src/styles/common.css",
   "src/styles/form.css",
   "src/styles/vars.css",
-  "src/styles/buttons.css",
   "src/styles/components/*.css",
   "src/styles/templates/*.css",
   "src/styles/pages/*.css",

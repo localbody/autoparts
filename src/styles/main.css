@@ -12,6 +12,11 @@
 
 html,
 body {
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 0 auto;
+  background-color: var(--background);
+
   font-family: 'Geometria';
   font-weight: 300;
   color: var(--text);
@@ -23,12 +28,6 @@ body {
   :root {
     --font-size: 14px;
   }
-}
-
-body {
-  max-width: 1920px;
-  min-width: 360px;
-  margin: 0 auto;
 }
 
 .body--overflow {

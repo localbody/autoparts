@@ -1,0 +1,16 @@
+hr {
+    border: none;
+    margin: 0;
+}
+
+hr.brake {
+    height: 140px;
+}
+
+hr.line {
+    margin-block: 40px;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.06;
+}

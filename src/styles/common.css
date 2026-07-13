@@ -1,5 +1,6 @@
 :root {
     --pad92: 92px;
+    --pad60: 60px;
     --pad20: 20px;
     --pad12: 12px;
 
@@ -8,12 +9,6 @@
     --gap20: 20px;
     --gap12: 12px;
     --gap8: 8px;
-}
-
-hr {
-    height: 140px;
-    border: none;
-    margin: 0;
 }
 
 h1,
@@ -55,6 +50,14 @@ h6,
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.text,
+.text--14 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
 }
 
 .title14 {
