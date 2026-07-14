@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--text);
+    background-color: var(--heading);
     padding-inline: var(--pad92);
     padding-block: var(--pad20);
     border-radius: 0 0 30px 30px;

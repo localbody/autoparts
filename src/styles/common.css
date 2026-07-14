@@ -23,7 +23,7 @@ h1,
 .h1 {
     font-size: 70px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 120%;
     letter-spacing: -1.4px;
 }
@@ -99,7 +99,7 @@ h6,
 .title14--bold {
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -113,13 +113,13 @@ h6,
 .number60 {
     font-size: 60px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 100%;
 }
 
 .number32 {
     font-size: 32px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }

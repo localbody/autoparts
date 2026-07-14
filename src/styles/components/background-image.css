@@ -2,3 +2,10 @@
     position: absolute;
     top: 0;
 }
+
+.background-image--invovic {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}

@@ -2,8 +2,8 @@
     display: grid;
     gap: var(--gap12);
     color: var(--heading);
-    grid-auto-rows: max-content;
-    height: max-content;
+    /* grid-auto-rows: max-content; */
+    /* height: max-content; */
 }
 
 .number-card__title {
@@ -35,6 +35,11 @@
     border-radius: 16px;
     width: 100%;
     max-width: 270px;
+}
+
+.number-card--fluid {
+    width: 100%;
+    max-width: 100%;
 }
 
 .number-card--heading .number-card__subtitle {

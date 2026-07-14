@@ -16,3 +16,13 @@
     height: 119px;
     object-fit: contain;
 }
+
+.circle-icon--invovic {
+    top: 50%;
+    right: 10%;
+}
+
+.circle-icon--kbase {
+    top: 40%;
+    right: 5%;
+}
