@@ -5,6 +5,19 @@
     justify-content: space-between;
 }
 
+.info-cards--flex {
+    flex-wrap: wrap;
+    gap: var(--gap20);
+}
+
+.info-cards--flex .info-card {
+    min-width: 414px;
+}
+
+.info-cards--brand {
+    gap: var(--gap20);
+}
+
 .info-card {
     flex: 1;
     padding: var(--pad28);

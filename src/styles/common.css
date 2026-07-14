@@ -110,9 +110,16 @@ h6,
     line-height: 140%;
 }
 
-.number--60 {
+.number60 {
     font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
+}
+
+.number32 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

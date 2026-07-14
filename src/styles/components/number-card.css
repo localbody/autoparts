@@ -2,27 +2,47 @@
     display: grid;
     gap: var(--gap12);
     color: var(--heading);
+    grid-auto-rows: max-content;
+    height: max-content;
 }
 
 .number-card__title {
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
     white-space: nowrap;
 }
 
+.number-card__title--fix {
+    width: 200px;
+}
+
 .number-card__subtitle {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
     white-space: nowrap;
 }
 
 .number-cards {
     display: flex;
     gap: var(--gap40);
+    height: max-content;
 }
 
+.number-cards--factory .number-card__title {}
+
 .number-cards--catalog {}
+
+.number-card--heading {
+    background-color: var(--heading);
+    padding: var(--pad20);
+    color: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 270px;
+}
+
+.number-card--heading .number-card__subtitle {
+    white-space: wrap;
+}
+
+.number-cards__items {
+    display: grid;
+    gap: var(--gap40);
+    max-width: 400px;
+}

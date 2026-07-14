@@ -1,0 +1,10 @@
+.brand-image {
+    width: 451px;
+    position: relative;
+}
+
+.brand-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

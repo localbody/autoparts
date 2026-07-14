@@ -1,0 +1,46 @@
+.factory__image {
+    max-width: 414px;
+    max-height: 248px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.factory__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.factory__brand-image {
+    width: 251px;
+    height: 68px;
+}
+
+.factory__brand-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.factory__info {
+    display: grid;
+    gap: var(--gap20);
+    align-content: space-between;
+}
+
+.factory__partners-images {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--gap20);
+    column-gap: var(--gap40);
+}
+
+.factory__partners-image {
+    max-height: 36px;
+}
+
+.factory__partners-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

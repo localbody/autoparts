@@ -1,0 +1,18 @@
+.circle-icon {
+    width: 191px;
+    height: 192px;
+    display: grid;
+    place-content: center;
+    background-color: var(--accent);
+    border-radius: 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.circle-icon img {
+    width: 119px;
+    height: 119px;
+    object-fit: contain;
+}

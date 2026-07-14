@@ -3,6 +3,10 @@ hr {
     margin: 0;
 }
 
+hr.brake--90 {
+    height: 90px;
+}
+
 hr.brake {
     height: 140px;
 }
