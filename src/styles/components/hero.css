@@ -27,12 +27,14 @@
     max-width: 845px;
     display: grid;
     gap: var(--gap20);
+    position: relative;
 }
 
 .hero__right {
     width: 36%;
     display: grid;
     gap: var(--gap40);
+    position: relative;
 }
 
 .hero__title {
@@ -46,6 +48,12 @@
 
 .hero__subtitle {
     margin-right: 165px;
+}
+
+@media (max-width: 1199px) {
+    .hero__subtitle {
+        font-size: 16px;
+    }
 }
 
 .hero__info-list {

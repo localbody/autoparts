@@ -32,6 +32,18 @@
     line-height: 140%;
 }
 
+@media (max-width: 1199px) {
+    .button--download {
+        font-size: 14px;
+    }
+
+    .footer .button--download {
+        width: 100%;
+    }
+
+}
+
+
 .button--white {
     color: white;
     border: 2px solid white;

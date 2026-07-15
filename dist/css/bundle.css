@@ -608,115 +608,6 @@ button {
     }
 }
 
-h1,
-.h1 {
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: -1.4px;
-}
-
-h2,
-.h2 {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-h3,
-.h3 {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-}
-
-h4,
-.h4 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-h5,
-.h5 {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-h6,
-.h6 {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.text12 {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%
-}
-
-.text14 {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 140%;
-}
-
-.text16 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 140%;
-}
-
-.title14 {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.title14--bold {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.title16 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-}
-
-.number60 {
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-}
-
-.number32 {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.color--heading {
-    color: var(--heading);
-}
-
 @media (max-width: 1199px) {
     [hide-on-mobile] {
         display: none !important;
@@ -727,6 +618,173 @@ h6,
     [hide-on-desktop] {
         display: none !important;
     }
+}
+
+h1,
+.h1 {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -1.4px;
+}
+
+@media (max-width: 1199px) {
+
+    h1,
+    .h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {
+
+    h2,
+    .h2 {
+        font-size: 18px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+@media (max-width: 1199px) {
+
+    h3,
+    .h3 {
+        font-size: 14px;
+    }
+}
+
+
+h4,
+.h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+
+h5,
+.h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+h6,
+.h6 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+.text12 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%
+}
+
+@media (max-width: 1199px) {}
+
+.text14 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+@media (max-width: 1199px) {
+    .text14 {
+        font-size: 12px;
+    }
+}
+
+
+.text16 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+@media (max-width: 1199px) {
+    .text16 {
+        font-size: 12px;
+    }
+}
+
+.title14 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+.title14--bold {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+.title16 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+@media (max-width: 1199px) {}
+
+.number60 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+@media (max-width: 1199px) {}
+
+.number32 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media (max-width: 1199px) {}
+
+.color--heading {
+    color: var(--heading);
 }
 .form {
     position: relative;
@@ -1001,6 +1059,18 @@ h6,
     line-height: 140%;
 }
 
+@media (max-width: 1199px) {
+    .button--download {
+        font-size: 14px;
+    }
+
+    .footer .button--download {
+        width: 100%;
+    }
+
+}
+
+
 .button--white {
     color: white;
     border: 2px solid white;
@@ -1188,12 +1258,14 @@ h6,
     max-width: 845px;
     display: grid;
     gap: var(--gap20);
+    position: relative;
 }
 
 .hero__right {
     width: 36%;
     display: grid;
     gap: var(--gap40);
+    position: relative;
 }
 
 .hero__title {
@@ -1207,6 +1279,12 @@ h6,
 
 .hero__subtitle {
     margin-right: 165px;
+}
+
+@media (max-width: 1199px) {
+    .hero__subtitle {
+        font-size: 16px;
+    }
 }
 
 .hero__info-list {
@@ -2284,6 +2362,12 @@ select::-ms-expand {
     line-height: normal;
 }
 
+@media (max-width: 1199px) {
+    .footer__phones .phone {
+        font-size: 18px;
+    }
+}
+
 .footer__mailto {
     color: white;
     font-size: 18px;
@@ -2324,6 +2408,12 @@ select::-ms-expand {
     font-style: normal;
     font-weight: 300;
     line-height: 140%;
+}
+
+@media (max-width: 1199px) {
+    .footer__link {
+        font-size: 12px;
+    }
 }
 .header {
     background-color: var(--heading);

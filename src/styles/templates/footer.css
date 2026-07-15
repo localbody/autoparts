@@ -69,6 +69,12 @@
     line-height: normal;
 }
 
+@media (max-width: 1199px) {
+    .footer__phones .phone {
+        font-size: 18px;
+    }
+}
+
 .footer__mailto {
     color: white;
     font-size: 18px;
@@ -109,4 +115,10 @@
     font-style: normal;
     font-weight: 300;
     line-height: 140%;
+}
+
+@media (max-width: 1199px) {
+    .footer__link {
+        font-size: 12px;
+    }
 }
