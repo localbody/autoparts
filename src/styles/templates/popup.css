@@ -1,0 +1,90 @@
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup--open {
+    display: block;
+}
+
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popup__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/icons/close.svg);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.popup__wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 640px;
+
+    background-color: white;
+
+    padding: var(--pad40);
+
+    border-radius: 30px;
+}
+
+.popup__title {
+    display: grid;
+    gap: var(--gap40);
+}
+
+.popup__title h4 {
+    color: var(--heading);
+}
+
+.popup__body {
+    display: grid;
+    gap: var(--gap40);
+}
+
+.popup__form,
+.popup__inputs {
+    display: grid;
+    gap: var(--gap20);
+}
+
+.popup input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+.popup .select {
+    width: 100%;
+    max-width: 100%;
+}
+
+.popup .button {
+    width: 100%;
+    max-width: 100%;
+}
+
+.popup a {
+    color: var(--heading);
+}

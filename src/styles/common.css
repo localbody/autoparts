@@ -19,11 +19,34 @@
     --gap8: 8px;
 }
 
+@media (max-width: 1199px) {
+    :root {
+        --pad120: 120px;
+        --pad92: 20px;
+        --pad60: 60px;
+        --pad40: 40px;
+        --pad32: 32px;
+        --pad28: 28px;
+        --pad20: 10px;
+        --pad16: 16px;
+        --pad12: 12px;
+
+        --gap80: 80px;
+        --gap60: 60px;
+        --gap40: 24px;
+        --gap32: 32px;
+        --gap20: 20px;
+        --gap16: 16px;
+        --gap12: 12px;
+        --gap8: 8px;
+    }
+}
+
 h1,
 .h1 {
     font-size: 70px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 120%;
     letter-spacing: -1.4px;
 }
@@ -71,21 +94,21 @@ h6,
 .text12 {
     font-size: 12px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 140%
 }
 
 .text14 {
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
 }
 
 .text16 {
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
 }
 
@@ -99,7 +122,7 @@ h6,
 .title14--bold {
     font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
 }
 
@@ -113,13 +136,29 @@ h6,
 .number60 {
     font-size: 60px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 100%;
 }
 
 .number32 {
     font-size: 32px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
+}
+
+.color--heading {
+    color: var(--heading);
+}
+
+@media (max-width: 1199px) {
+    [hide-on-mobile] {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    [hide-on-desktop] {
+        display: none !important;
+    }
 }

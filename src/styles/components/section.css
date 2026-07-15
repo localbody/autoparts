@@ -150,7 +150,7 @@
 .section__header-tag {
     font-size: 12px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 140%;
     padding: 6px 12px;
     border-radius: 99px;
@@ -219,4 +219,10 @@
     display: grid;
     gap: var(--gap20);
     grid-template-columns: 1fr 1fr;
+}
+
+.section--page {
+    display: grid;
+    gap: var(--gap40);
+    padding-inline: var(--pad92);
 }

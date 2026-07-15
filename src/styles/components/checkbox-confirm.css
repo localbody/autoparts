@@ -19,16 +19,16 @@
 }
 
 .checkbox-confirm input[type="checkbox"]:checked+label::before {
-    background-image: url(/images/icons/check.svg);
+    background-image: url(../images/icons/check.svg);
     background-size: 12px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--accent);
+    /* background-color: var(--accent); */
 }
 
 .checkbox-confirm {
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
 }

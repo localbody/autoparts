@@ -11,6 +11,7 @@ select {
     background-image: none;
     cursor: pointer;
     color: var(--text);
+    font-weight: 300;
 }
 
 /* Remove IE arrow */

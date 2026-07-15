@@ -17,7 +17,7 @@
     background-color: var(--accent);
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
 }
 
@@ -41,4 +41,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+}
+
+.button--fluid {
+    max-width: 100%;
 }

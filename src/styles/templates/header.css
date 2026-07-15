@@ -19,6 +19,13 @@
     gap: var(--gap20);
 }
 
+@media (max-width: 1199px) {
+    .header__logo {
+        width: 105px;
+        height: 40px;
+    }
+}
+
 .header__logo-image {
     width: 100%;
     height: 100%;

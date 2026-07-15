@@ -3,12 +3,18 @@ hr {
     margin: 0;
 }
 
-hr.brake--90 {
+hr.brake--small {
     height: 90px;
 }
 
 hr.brake {
     height: 140px;
+}
+
+@media (max-width: 1199px) {
+    hr.brake {
+        height: 60px;
+    }
 }
 
 hr.line {
@@ -17,4 +23,10 @@ hr.line {
     width: 100%;
     background-color: white;
     opacity: 0.06;
+}
+
+@media (max-width: 1199px) {
+    hr.line {
+        margin-block: 24px;
+    }
 }
