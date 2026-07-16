@@ -24,6 +24,12 @@
     object-fit: contain;
 }
 
+@media (max-width: 1439px) {
+    .kbase .circle-icon img {
+        padding: 10px;
+    }
+}
+
 .circle-icon--ktop {
     top: 0;
     right: 0;
@@ -52,4 +58,10 @@
 .circle-icon--kbase {
     top: 40%;
     right: 5%;
+}
+
+@media (max-width: 1439px) {
+    .circle-icon--kbase {
+        top: 25%;
+    }
 }

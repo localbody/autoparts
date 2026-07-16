@@ -114,8 +114,13 @@ h4,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1439px) {
 
+    h4,
+    .h4 {
+        font-size: 14px;
+    }
+}
 
 h5,
 .h5 {
