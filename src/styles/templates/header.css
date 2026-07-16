@@ -19,7 +19,7 @@
     gap: var(--gap20);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .header__logo {
         width: 105px;
         height: 40px;

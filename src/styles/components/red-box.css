@@ -24,3 +24,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 1439px) {
+    .red-box--certificate {
+        padding: 20px 66px 54px 20px;
+        min-width: initial;
+        min-height: 140px;
+        background-size: 75%;
+    }
+}

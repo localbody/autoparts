@@ -5,6 +5,13 @@
     justify-content: space-between;
 }
 
+
+@media (max-width: 1439px) {
+    .info-cards {
+        flex-direction: column;
+    }
+}
+
 .info-cards--flex {
     flex-wrap: wrap;
     gap: var(--gap20);
@@ -28,8 +35,20 @@
     background-color: white;
 }
 
+@media (max-width: 1439px) {
+    .info-card {
+        grid-template-columns: 1fr max-content;
+    }
+}
+
 .info-cards--offer .info-card {
     background-color: #F6F6F6;
+}
+
+@media (max-width: 1439px) {
+    .info-cards--offer .info-card {
+        background-color: white;
+    }
 }
 
 .info-cards--about {
@@ -39,6 +58,14 @@
 .info-card__icon {
     width: 60px;
     height: 60px;
+}
+
+@media (max-width: 1439px) {
+    .info-card__icon {
+        order: 1;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .info-card__icon img {

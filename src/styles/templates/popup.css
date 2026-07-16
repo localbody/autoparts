@@ -39,15 +39,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 100%;
     max-width: 640px;
-
     background-color: white;
-
     padding: var(--pad40);
-
     border-radius: 30px;
+}
+
+@media (max-width: 1439px) {
+    .popup__wrapper {
+        max-width: calc(100% - 10px);
+        padding: 20px;
+    }
 }
 
 .popup__title {
@@ -57,7 +60,10 @@
 
 .popup__title h4 {
     color: var(--heading);
+    margin-right: 40px;
+    margin-top: 10px;
 }
+
 
 .popup__body {
     display: grid;

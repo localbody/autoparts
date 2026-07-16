@@ -2,6 +2,7 @@
     display: grid;
     gap: var(--gap12);
     color: var(--heading);
+    align-content: space-between;
     /* grid-auto-rows: max-content; */
     /* height: max-content; */
 }
@@ -24,6 +25,13 @@
     height: max-content;
 }
 
+@media (max-width: 1439px) {
+    .number-cards {
+        gap: 8px;
+        justify-content: space-between;
+    }
+}
+
 .number-cards--factory .number-card__title {}
 
 .number-cards--catalog {}
@@ -35,6 +43,12 @@
     border-radius: 16px;
     width: 100%;
     max-width: 270px;
+}
+
+@media (max-width: 1439px) {
+    .number-card--heading {
+        /* flex-shrink: 0; */
+    }
 }
 
 .number-card--fluid {
@@ -50,4 +64,11 @@
     display: grid;
     gap: var(--gap40);
     max-width: 400px;
+}
+
+@media (max-width: 1439px) {
+    .number-cards__items {
+        max-width: 100%;
+        width: 100%;
+    }
 }

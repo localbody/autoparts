@@ -2,4 +2,20 @@
     display: flex;
     justify-content: space-between;
     gap: var(--gap20);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1439px) {
+    .calculator__row {
+        gap: 8px;
+    }
+
+    .calculator__row .box--flex {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .calculator .button[data-action="popup-get-catalog"] {
+        width: 100%;
+    }
 }

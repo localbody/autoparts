@@ -3,6 +3,7 @@
     max-height: 248px;
     border-radius: 16px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .factory__image img {
@@ -14,6 +15,14 @@
 .factory__brand-image {
     width: 251px;
     height: 68px;
+}
+
+@media (max-width: 1439px) {
+    .factory__brand-image {
+        width: 92px;
+        height: 25px;
+    }
+
 }
 
 .factory__brand-image img {

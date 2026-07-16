@@ -4,3 +4,9 @@
     background-color: var(--accent);
     background-image: url(../images/car-front.png);
 }
+
+@media (max-width: 1439px) {
+    .advantages {
+        border-radius: 16px;
+    }
+}

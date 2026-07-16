@@ -7,6 +7,25 @@
     gap: 60px;
     height: 737px;
     position: relative;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1439px) {
+
+    .hero {
+        padding-top: 60px;
+        height: initial;
+        padding-bottom: initial;
+    }
+
+    .hero button[data-action="popup-get-catalog"] {
+        padding-inline: 61px;
+        white-space: wrap;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 
 .hero__bg {
@@ -14,12 +33,25 @@
     top: -50px;
     right: 0;
     z-index: 0;
-    height: calc(100%);
     width: 100%;
     height: calc(100% + 50px);
     background-image: url(../images/hero.svg);
     background-position: right bottom;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 1439px) {
+    .hero__bg {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        z-index: 0;
+        height: 61%;
+        width: 100%;
+        background-image: url(../images/hero--mobile.svg);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
 }
 
 .hero__left {
@@ -30,6 +62,13 @@
     position: relative;
 }
 
+@media (max-width: 1439px) {
+    .hero__left {
+        width: initial;
+        max-width: initial;
+    }
+}
+
 .hero__right {
     width: 36%;
     display: grid;
@@ -37,9 +76,17 @@
     position: relative;
 }
 
+@media (max-width: 1439px) {
+    .hero__right {
+        width: initial;
+        padding: 20px;
+        border-radius: 16px;
+        background: linear-gradient(225deg, #24272C 19.14%, #111419 97.36%);
+    }
+}
+
 .hero__title {
     display: grid;
-
 }
 
 .hero__title--accent {
@@ -50,9 +97,10 @@
     margin-right: 165px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .hero__subtitle {
         font-size: 16px;
+        margin-right: initial;
     }
 }
 
@@ -60,6 +108,7 @@
     display: flex;
     align-items: center;
     gap: var(--gap32);
+    justify-content: space-between;
 }
 
 .hero__info {
@@ -71,6 +120,12 @@
     align-items: center;
     gap: var(--gap8);
     color: white;
+}
+
+@media (max-width: 1439px) {
+    .hero__info {
+        display: grid;
+    }
 }
 
 .hero__info span {
@@ -91,4 +146,5 @@
     display: flex;
     align-items: center;
     gap: var(--gap20);
+    flex-wrap: wrap;
 }

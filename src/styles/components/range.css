@@ -14,11 +14,26 @@
     gap: var(--gap12);
 }
 
+@media (max-width: 1439px) {
+    .range {
+        min-width: 100%;
+    }
+}
+
 .range__scale {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 1439px) {
+    .range__scale-item {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+}
+
 
 /* Общие стили для всех браузеров */
 input[type="range"] {

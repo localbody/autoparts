@@ -10,11 +10,21 @@
     aspect-ratio: 64 / 25;
 }
 
+@media (max-width: 1439px) {
+    .about__logo {
+        width: 120px;
+        height: 47px;
+        aspect-ratio: 120/47;
+    }
+}
+
+
 .about__logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 
 .about__info {
     display: grid;
@@ -33,6 +43,12 @@
     gap: var(--gap12);
 }
 
+@media (max-width: 1439px) {
+    .about__year {
+        display: grid;
+    }
+}
+
 .about__year-number {
     font-size: 60px;
     font-style: normal;
@@ -42,7 +58,17 @@
     color: var(--heading);
 }
 
-.about__year-text {}
+@media (max-width: 1439px) {
+    .about__year-number {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .about__year-text {
+        font-size: 14px;
+    }
+}
 
 .about__images {
     display: flex;
@@ -60,4 +86,9 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
 }

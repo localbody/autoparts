@@ -4,7 +4,26 @@
     /* +33%  */
 }
 
+@media (max-width: 1439px) {
+    .swiper {
+        height: initial;
+    }
+}
+
 .swiper-slide {}
+
+
+.swiper-nav {
+    display: flex;
+    gap: var(--gap12);
+    align-items: center;
+}
+
+@media (max-width: 1439px) {
+    .swiper-nav {
+        justify-content: space-between;
+    }
+}
 
 .swiper-nav .next,
 .swiper-nav .prev {
@@ -20,10 +39,4 @@
 
 .swiper-nav .prev {
     transform: rotate(180deg);
-}
-
-.swiper-nav {
-    display: flex;
-    gap: var(--gap12);
-    align-items: center;
 }

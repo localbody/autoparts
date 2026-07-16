@@ -23,10 +23,24 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1439px) {
+    .form__inner {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
 .form__actions {
     display: flex;
     justify-content: space-between;
     gap: var(--gap20);
+}
+
+@media (max-width: 1439px) {
+    .form__actions {
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
 }
 
 .form-get-price .checkbox-confirm {
@@ -41,10 +55,22 @@
     margin-right: 444px;
 }
 
+@media (max-width: 1439px) {
+    .form-get-price .form__wrapper {
+        margin-right: 0;
+    }
+}
+
 .form__image {
     position: absolute;
     right: 150px;
     bottom: 0;
+}
+
+@media (max-width: 1439px) {
+    .form__image {
+        display: none;
+    }
 }
 
 .form-get-price::after {
@@ -57,4 +83,14 @@
     left: 40px;
     right: 40px;
     /* width: 100%; */
+}
+
+@media (max-width: 1439px) {
+    .form-get-price::after {
+        left: 20px;
+        right: 20px;
+        height: 20px;
+        bottom: -20px;
+
+    }
 }

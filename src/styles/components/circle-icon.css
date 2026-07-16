@@ -6,20 +6,47 @@
     background-color: var(--accent);
     border-radius: 1000px;
     position: absolute;
-    right: 0;
-    top: 0;
     z-index: 1;
+    padding: 20px;
+}
+
+@media (max-width: 1439px) {
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
 }
 
 .circle-icon img {
-    width: 119px;
-    height: 119px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+}
+
+.circle-icon--ktop {
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 1439px) {
+    .circle-icon--ktop {
+        top: 12%;
+        right: 12%;
+    }
+
 }
 
 .circle-icon--invovic {
     top: 50%;
     right: 10%;
+}
+
+@media (max-width: 1439px) {
+    .circle-icon--invovic {
+        top: 75%;
+        right: 0%;
+    }
 }
 
 .circle-icon--kbase {

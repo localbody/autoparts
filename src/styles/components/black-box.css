@@ -11,6 +11,16 @@
     align-content: space-between;
 }
 
+@media (max-width: 1439px) {
+    .black-box {
+        width: 100%;
+        min-height: initial;
+        gap: 20px;
+        min-height: initial;
+        min-width: initial;
+    }
+}
+
 .black-box__prices {
     display: flex;
     align-items: center;
@@ -19,7 +29,7 @@
 
 .black-box__price {
     display: grid;
-    gap: var(-gap12);
+    gap: var(--gap12);
 }
 
 .black-box__price-text {

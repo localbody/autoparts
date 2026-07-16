@@ -7,11 +7,17 @@ hr.brake--small {
     height: 90px;
 }
 
+@media (max-width: 1439px) {
+    hr.brake--small {
+        height: 24px;
+    }
+}
+
 hr.brake {
     height: 140px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     hr.brake {
         height: 60px;
     }
@@ -25,7 +31,7 @@ hr.line {
     opacity: 0.06;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     hr.line {
         margin-block: 24px;
     }

@@ -5,6 +5,12 @@
     width: 100%;
 }
 
+@media (max-width: 1439px) {
+    .brand-info {
+        flex-wrap: wrap;
+    }
+}
+
 .brand-info__image {
     height: 70px;
 }
@@ -21,6 +27,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 1439px) {
+    .brand-info__partners {
+        margin-top: 12px;
+    }
+}
+
 
 .brand-info__partner {
     height: 36px;

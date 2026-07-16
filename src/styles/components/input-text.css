@@ -10,6 +10,12 @@ input[type="text"] {
     color: var(--heading);
 }
 
+@media (max-width: 1439px) {
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
 input[type="text"]::placeholder {
     color: var(--text);
 }

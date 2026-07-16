@@ -6,6 +6,13 @@
     column-gap: var(--gap40);
 }
 
+@media (max-width: 1439px) {
+    .faq__items {
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+    }
+}
+
 .faq__item {
     background-color: white;
     border-radius: 16px;
@@ -20,6 +27,12 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--gap40);
+}
+
+@media (max-width: 1439px) {
+    .faq__title {
+        font-size: 14px;
+    }
 }
 
 .faq__content {

@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
 
     .footer__top,
     .footer__top .footer__wrapper,
@@ -31,7 +31,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .footer__logo {
         width: 205px;
         height: 79px;
@@ -69,7 +69,7 @@
     line-height: normal;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .footer__phones .phone {
         font-size: 18px;
     }
@@ -103,7 +103,7 @@
     gap: var(--gap20);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .footer__links {
         display: grid;
     }
@@ -117,7 +117,7 @@
     line-height: 140%;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1439px) {
     .footer__link {
         font-size: 12px;
     }

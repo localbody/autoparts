@@ -54,3 +54,12 @@
     background-repeat: no-repeat;
     background-size: 24px;
 }
+
+@media (max-width: 1439px) {
+    .video__button-play {
+        width: 40px;
+        height: 40px;
+        background-size: 12px;
+
+    }
+}
