@@ -19,7 +19,10 @@
 
 @media (max-width: 1439px) {
     .background-image--invovic {
+        left: 0;
+        transform: none;
+
         top: 3%;
-        width: 100%;
+        max-width: 100%;
     }
 }

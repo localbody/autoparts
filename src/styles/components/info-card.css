@@ -21,6 +21,12 @@
     min-width: 414px;
 }
 
+@media (max-width: 1439px) {
+    .info-cards--flex .info-card {
+        min-width: initial;
+    }
+}
+
 .info-cards--brand {
     gap: var(--gap20);
 }
