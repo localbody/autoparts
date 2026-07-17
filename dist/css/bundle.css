@@ -2000,7 +2000,6 @@ input[type="range"]:hover::-ms-thumb {
 .section__title {
     color: var(--heading);
     max-width: 896px;
-    white-space: nowrap;
 }
 
 .section__title .accent {
@@ -2127,7 +2126,12 @@ input[type="range"]:hover::-ms-thumb {
     padding-inline: var(--pad92);
     display: flex;
     gap: var(--gap40);
-    flex-wrap: wrap;
+}
+
+@media (max-width: 1439px) {
+    .section--about {
+        flex-wrap: wrap;
+    }
 }
 
 .section__left--about {
@@ -2173,10 +2177,13 @@ input[type="range"]:hover::-ms-thumb {
     display: flex;
     gap: var(--gap40);
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1439px) {
+    .section--certificate {
+        flex-wrap: wrap;
+    }
+}
 
 .section__right--certificate {
     display: flex;
