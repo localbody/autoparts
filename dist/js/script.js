@@ -1,4 +1,65 @@
 const onLoad = () => {
+  // calculator
+  const extractNumbers = (str) => {
+    // Удаляем все нечисловые символы (кроме цифр)
+    const numbersOnly = str.replace(/[^\d]/g, '')
+    // Преобразуем в число
+    return parseInt(numbersOnly, 10)
+  }
+
+  const formatNumberWithSpaces = (number, currencySymbol = '₽') => {
+    // Форматируем число с запятыми
+    const formattedWithCommas = number.toLocaleString('ru-RU')
+
+    // Заменяем запятые на пробелы
+    const formattedWithSpaces = formattedWithCommas.replace(/,/g, ' ')
+
+    // Добавляем символ валюты
+    return `${formattedWithSpaces} ${currencySymbol}`
+  }
+
+  const result = document.querySelector('[data-calc="result"]')
+
+  const optValue = extractNumbers(
+    document.querySelector('[data-calc="opt"]')?.textContent,
+  )
+
+  const priceValue = extractNumbers(
+    document.querySelector('[data-calc="price"]')?.textContent,
+  )
+
+  const rangeInput1 = document.querySelector('[name="range1"]')
+
+  let rangeValue1 = rangeInput1?.value
+
+  const rangeInput2 = document.querySelector('[name="range2"]')
+
+  let rangeValue2 = rangeInput2?.value
+
+  console.log(priceValue, optValue, rangeValue1, rangeValue2)
+
+  let resultValue
+
+  const reCalc = () => {
+    resultValue = (priceValue - optValue) * rangeValue1 * rangeValue2
+
+    result.textContent = formatNumberWithSpaces(resultValue)
+  }
+
+  reCalc()
+
+  const onInputRange1 = () => {
+    rangeValue1 = rangeInput1?.value
+    reCalc()
+  }
+
+  const onInputRange2 = () => {
+    rangeValue2 = rangeInput2?.value
+    reCalc()
+  }
+  rangeInput1?.addEventListener('input', onInputRange1)
+  rangeInput2?.addEventListener('input', onInputRange2)
+
   // expand-collapse
   checkboxesExpandCollapse = document.querySelectorAll(
     '.expand-collapse__checkbox',
