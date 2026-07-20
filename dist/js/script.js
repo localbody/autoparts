@@ -1,4 +1,29 @@
 const onLoad = () => {
+  // expand-collapse
+  checkboxesExpandCollapse = document.querySelectorAll(
+    '.expand-collapse__checkbox',
+  )
+
+  const onChangeCheckboxExpandCollapse = (event) => {
+    console.log(event.target, event.target.checked, event.target.id)
+
+    const id = event.target.id
+
+    elementExpandCollapse = document.querySelector(
+      `[data-expand-collapse="${id}"]`,
+    )
+
+    if (event.target.checked) {
+      elementExpandCollapse?.classList.add('collapse')
+    } else {
+      elementExpandCollapse?.classList.remove('collapse')
+    }
+  }
+
+  checkboxesExpandCollapse.forEach((item) => {
+    item.addEventListener('change', onChangeCheckboxExpandCollapse)
+  })
+
   // input phone
   const inputTelItems = document.querySelectorAll('.tel')
   const maskOptions = {
