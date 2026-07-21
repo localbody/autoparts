@@ -2,14 +2,14 @@ const onLoad = () => {
   // calculator
   const extractNumbers = (str) => {
     // Удаляем все нечисловые символы (кроме цифр)
-    const numbersOnly = str.replace(/[^\d]/g, '')
+    const numbersOnly = str?.replace(/[^\d]/g, '')
     // Преобразуем в число
     return parseInt(numbersOnly, 10)
   }
 
   const formatNumberWithSpaces = (number, currencySymbol = '₽') => {
     // Форматируем число с запятыми
-    const formattedWithCommas = number.toLocaleString('ru-RU')
+    const formattedWithCommas = number?.toLocaleString('ru-RU')
 
     // Заменяем запятые на пробелы
     const formattedWithSpaces = formattedWithCommas.replace(/,/g, ' ')
@@ -36,14 +36,14 @@ const onLoad = () => {
 
   let rangeValue2 = rangeInput2?.value
 
-  console.log(priceValue, optValue, rangeValue1, rangeValue2)
-
   let resultValue
 
   const reCalc = () => {
     resultValue = (priceValue - optValue) * rangeValue1 * rangeValue2
 
-    result.textContent = formatNumberWithSpaces(resultValue)
+    if (result) {
+      result.textContent = formatNumberWithSpaces(resultValue)
+    }
   }
 
   reCalc()
@@ -96,10 +96,6 @@ const onLoad = () => {
   })
 
   // popup
-  const openPopupRecordOnlineItems = document.querySelectorAll(
-    '[data-action="popup-get-catalog"]',
-  )
-
   const closePopup = (popup) => {
     popup?.classList.remove('popup--open')
     document.querySelector('body').classList.remove('body--overflow')
@@ -107,11 +103,27 @@ const onLoad = () => {
 
   const onKeyDown = (event, popup) => {
     if (event.key === 'Escape') {
-      const popup = document.querySelector('[data-popup="get-catalog"]')
+      const popup = document.querySelector('.popup')
 
       closePopup(popup)
     }
   }
+
+  const onClickBody = (event) => {
+    if (
+      !event.target.closest('.popup__wrapper') &&
+      event.target.dataset.action != 'popup-get-catalog'
+    ) {
+      const popup = document.querySelector('.popup')
+      closePopup(popup)
+    }
+  }
+
+  document.querySelector('body')?.addEventListener('click', onClickBody)
+
+  const openPopupRecordOnlineItems = document.querySelectorAll(
+    '[data-action="popup-get-catalog"]',
+  )
 
   document.addEventListener('keydown', onKeyDown)
 
