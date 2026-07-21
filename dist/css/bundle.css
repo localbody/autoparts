@@ -546,12 +546,7 @@ li {
   list-style: none;
 }
 
-.container {
-  width: 100%;
-  max-width: var(--desktop-width);
-  margin: 0 auto;
-  padding: 0px 92px;
-}
+
 
 [hidden] {
   display: none !important;
@@ -639,6 +634,7 @@ h1,
     }
 }
 
+h1.text--h1,
 h2,
 .h2 {
     font-size: 32px;
@@ -736,7 +732,6 @@ h6,
     }
 }
 
-
 .text16 {
     font-size: 16px;
     font-style: normal;
@@ -803,6 +798,7 @@ h6,
 
 @media (max-width: 1439px) {}
 
+.page-title,
 .color--heading {
     color: var(--heading);
 }
@@ -1141,6 +1137,20 @@ h6,
     display: grid;
     align-content: space-between;
 }
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: var(--gap8);
+}
+
+.breadcrumbs a {
+    color: var(--heading);
+}
+
+.breadcrumbs a::after {
+    content: '/';
+    margin-left: 8px;
+}
 .button {
     cursor: pointer;
     text-decoration: none;
@@ -1301,6 +1311,39 @@ h6,
 @media (max-width: 1439px) {
     .circle-icon--kbase {
         top: 25%;
+    }
+}
+.section .container {
+    display: grid;
+    gap: var(--gap16);
+}
+
+.section .container {
+    width: 100%;
+    max-width: var(--desktop-width);
+    margin: 0 auto;
+    padding-inline: var(--pad92);
+}
+
+.section .container:not(:last-child) {
+    padding-bottom: var(--pad32);
+}
+
+.container p,
+.container ul,
+.container ol {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+@media (max-width: 1439px) {
+
+    .container p,
+    .container ul,
+    .container ol {
+        font-size: 12px;
     }
 }
 .expand-collapse {

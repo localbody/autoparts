@@ -57,12 +57,7 @@ li {
   list-style: none;
 }
 
-.container {
-  width: 100%;
-  max-width: var(--desktop-width);
-  margin: 0 auto;
-  padding: 0px 92px;
-}
+
 
 [hidden] {
   display: none !important;

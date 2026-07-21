@@ -1,0 +1,33 @@
+.section .container {
+    display: grid;
+    gap: var(--gap16);
+}
+
+.section .container {
+    width: 100%;
+    max-width: var(--desktop-width);
+    margin: 0 auto;
+    padding-inline: var(--pad92);
+}
+
+.section .container:not(:last-child) {
+    padding-bottom: var(--pad32);
+}
+
+.container p,
+.container ul,
+.container ol {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+@media (max-width: 1439px) {
+
+    .container p,
+    .container ul,
+    .container ol {
+        font-size: 12px;
+    }
+}

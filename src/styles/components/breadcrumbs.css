@@ -1,0 +1,14 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: var(--gap8);
+}
+
+.breadcrumbs a {
+    color: var(--heading);
+}
+
+.breadcrumbs a::after {
+    content: '/';
+    margin-left: 8px;
+}

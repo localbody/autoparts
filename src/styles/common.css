@@ -73,6 +73,7 @@ h1,
     }
 }
 
+h1.text--h1,
 h2,
 .h2 {
     font-size: 32px;
@@ -170,7 +171,6 @@ h6,
     }
 }
 
-
 .text16 {
     font-size: 16px;
     font-style: normal;
@@ -237,6 +237,7 @@ h6,
 
 @media (max-width: 1439px) {}
 
+.page-title,
 .color--heading {
     color: var(--heading);
 }

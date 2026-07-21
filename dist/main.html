@@ -1161,7 +1161,17 @@
 
   <div class="section__wrapper section__wrapper--flex">
     <div class="section__left section__left--grid">
-      <div class="info-cards info-cards--flex">
+      <div class="expand-collapse" hide-on-desktop>
+        <input
+          class="expand-collapse__checkbox"
+          type="checkbox"
+          name=""
+          id="invovic"
+        />
+        <label for="invovic"></label>
+      </div>
+
+      <div class="info-cards info-cards--flex" data-expand-collapse="invovic">
         <div class="info-card">
           <div class="info-card__content">
             <h5 class="h5 info-card__title">Инновационность</h5>
@@ -1315,7 +1325,20 @@
       </div>
     </div>
 
-    <div class="section__right section__right--cards">
+    <div class="expand-collapse" hide-on-desktop>
+      <input
+        class="expand-collapse__checkbox"
+        type="checkbox"
+        name=""
+        id="kbase"
+      />
+      <label for="kbase"></label>
+    </div>
+
+    <div
+      class="section__right section__right--cards"
+      data-expand-collapse="kbase"
+    >
       <div class="info-card">
         <div class="info-card__content">
           <h5 class="h5 info-card__title">Инновационность</h5>
@@ -1530,9 +1553,13 @@
     </div>
 
     <div class="footer__links">
-      <a class="footer__link" href="">Политика конфиденциальности</a>
-      <a class="footer__link" href="">Пользовательское соглашение</a>
-      <a class="footer__link" href="">Cookies</a>
+      <a class="footer__link" href="./privacy.html"
+        >Политика конфиденциальности</a
+      >
+      <a class="footer__link" href="./agreement.html"
+        >Пользовательское соглашение</a
+      >
+      <a class="footer__link" href="./cookies.html">Cookies</a>
     </div>
   </div>
 </div>
