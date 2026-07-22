@@ -44,9 +44,15 @@ const onLoad = () => {
     if (result) {
       result.textContent = formatNumberWithSpaces(resultValue)
     }
+
+    console.log('recalc')
   }
 
   reCalc()
+
+  setTimeout(() => {
+    reCalc()
+  }, 1500)
 
   const onInputRange1 = () => {
     rangeValue1 = rangeInput1?.value
