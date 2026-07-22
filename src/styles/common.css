@@ -22,6 +22,29 @@
 
 @media (max-width: 1439px) {
     :root {
+        --pad120: 80px;
+        --pad92: 50px;
+        --pad60: 50px;
+        --pad40: 22px;
+        --pad32: 20px;
+        --pad28: 20px;
+        --pad20: 10px;
+        --pad16: 16px;
+        --pad12: 12px;
+
+        --gap80: 42px;
+        --gap60: 34px;
+        --gap40: 24px;
+        --gap32: 22px;
+        --gap20: 20px;
+        --gap16: 16px;
+        --gap12: 12px;
+        --gap8: 8px;
+    }
+}
+
+@media (max-width: 1365px) {
+    :root {
         --pad120: 40px;
         --pad92: 20px;
         --pad60: 40px;
@@ -43,7 +66,7 @@
     }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     [hide-on-mobile] {
         display: none !important;
     }
@@ -68,6 +91,14 @@ h1,
 
     h1,
     .h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1365px) {
+
+    h1,
+    .h1 {
         font-size: 24px;
         line-height: normal;
     }
@@ -82,7 +113,7 @@ h2,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
 
     h2,
     .h2 {
@@ -98,7 +129,7 @@ h3,
     line-height: 120%;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
 
     h3,
     .h3 {
@@ -115,7 +146,7 @@ h4,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
 
     h4,
     .h4 {
@@ -131,7 +162,7 @@ h5,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
 
     h5,
     .h5 {
@@ -147,7 +178,7 @@ h6,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1365px) {}
 
 .text12 {
     font-size: 12px;
@@ -156,7 +187,7 @@ h6,
     line-height: 140%
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1365px) {}
 
 .text14 {
     font-size: 14px;
@@ -165,7 +196,7 @@ h6,
     line-height: 140%;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .text14 {
         font-size: 12px;
     }
@@ -178,7 +209,7 @@ h6,
     line-height: 140%;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .text16 {
         font-size: 12px;
     }
@@ -191,7 +222,7 @@ h6,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1365px) {}
 
 .title14--bold {
     font-size: 14px;
@@ -200,7 +231,7 @@ h6,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .title14--bold {
         font-size: 12px;
     }
@@ -213,7 +244,7 @@ h6,
     line-height: 140%;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1365px) {}
 
 .number60 {
     font-size: 60px;
@@ -222,7 +253,7 @@ h6,
     line-height: 100%;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .number60 {
         font-size: 32px;
     }
@@ -235,7 +266,7 @@ h6,
     line-height: normal;
 }
 
-@media (max-width: 1439px) {}
+@media (max-width: 1365px) {}
 
 .page-title,
 .color--heading {

@@ -7,16 +7,21 @@
     gap: 60px;
     height: 737px;
     position: relative;
-    flex-wrap: wrap;
 }
 
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
+    .hero {
+        height: 640px;
+    }
+}
 
+@media (max-width: 1365px) {
     .hero {
         padding-top: 60px;
         height: initial;
         padding-bottom: initial;
+        flex-wrap: wrap;
     }
 
     .hero button[data-action="popup-get-catalog"] {
@@ -42,6 +47,13 @@
 
 @media (max-width: 1439px) {
     .hero__bg {
+        background-size: contain;
+    }
+
+}
+
+@media (max-width: 1365px) {
+    .hero__bg {
         position: absolute;
         top: -50px;
         right: 0;
@@ -64,6 +76,13 @@
 
 @media (max-width: 1439px) {
     .hero__left {
+        grid-auto-rows: max-content;
+        width: 40%;
+    }
+}
+
+@media (max-width: 1365px) {
+    .hero__left {
         width: initial;
         max-width: initial;
     }
@@ -78,10 +97,22 @@
 
 @media (max-width: 1439px) {
     .hero__right {
-        width: initial;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1365px) {
+    .hero__right {
         padding: 20px;
         border-radius: 16px;
         background: linear-gradient(225deg, #24272C 19.14%, #111419 97.36%);
+    }
+}
+
+@media (max-width: 1365px) {
+    .hero__right {
+        width: initial;
     }
 }
 
@@ -97,7 +128,7 @@
     margin-right: 165px;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .hero__subtitle {
         font-size: 16px;
         margin-right: initial;
@@ -122,7 +153,7 @@
     color: white;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .hero__info {
         display: grid;
     }
@@ -132,6 +163,12 @@
     background-color: var(--accent2);
     border-radius: 8px;
     padding: 8px;
+}
+
+@media (max-width: 1439px) {
+    .hero__slide {
+        max-width: max-content;
+    }
 }
 
 .hero__slide {

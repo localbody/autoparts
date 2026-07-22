@@ -11,7 +11,7 @@
     height: max-content;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .price-card {
         width: initial;
         max-width: initial;
@@ -27,7 +27,7 @@
     top: 33%;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .price-card__image {
         position: initial;
         width: 240px;
@@ -47,7 +47,7 @@
     gap: var(--gap32);
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .price-card__items {
         grid-template-columns: 1fr 1fr;
     }
@@ -60,7 +60,7 @@
     align-content: space-between;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .price-card__item {
         height: initial;
     }

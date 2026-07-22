@@ -4,7 +4,7 @@
     /* +33%  */
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .swiper {
         height: initial;
     }
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .swiper-nav {
         justify-content: space-between;
     }

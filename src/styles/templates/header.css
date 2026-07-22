@@ -10,6 +10,12 @@
     z-index: 1;
 }
 
+@media (max-width: 1365px) {
+    .header {
+        padding-inline: 12px;
+    }
+}
+
 .header__logo {
     color: white;
     width: 205px;
@@ -19,9 +25,9 @@
     gap: var(--gap20);
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1365px) {
     .header__logo {
-        width: 105px;
+        width: 95px;
         height: 40px;
     }
 }
@@ -29,7 +35,7 @@
 .header__logo-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     flex-shrink: 0;
 }
 
@@ -45,6 +51,13 @@
     gap: var(--gap20);
 }
 
+@media (max-width: 1439px) {
+    .header__wrapper {
+        gap: 12px;
+    }
+}
+
+
 .header__phones {
     display: flex;
     align-items: center;
@@ -58,6 +71,13 @@
     font-weight: 500;
     line-height: normal;
     flex-shrink: 0;
+}
+
+@media (max-width: 1365px) {
+    .header .phone {
+        color: white;
+        font-size: 12px;
+    }
 }
 
 .header__socials {
