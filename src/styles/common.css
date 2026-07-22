@@ -20,11 +20,35 @@
 
 }
 
+@media (max-width: 1799px) {
+    :root {
+        --pad120: 100px;
+        --pad92: 70px;
+        --pad60: 50px;
+        --pad40: 22px;
+        --pad32: 20px;
+        --pad28: 20px;
+        --pad20: 10px;
+        --pad16: 16px;
+        --pad12: 12px;
+
+        --gap80: 42px;
+        --gap60: 34px;
+        --gap40: 24px;
+        --gap32: 22px;
+        --gap20: 20px;
+        --gap16: 16px;
+        --gap12: 12px;
+        --gap8: 8px;
+    }
+}
+
+
 @media (max-width: 1439px) {
     :root {
         --pad120: 80px;
         --pad92: 50px;
-        --pad60: 50px;
+        --pad60: 44px;
         --pad40: 22px;
         --pad32: 20px;
         --pad28: 20px;
@@ -85,6 +109,14 @@ h1,
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -1.4px;
+}
+
+@media (max-width: 1799px) {
+
+    h1,
+    .h1 {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 1439px) {

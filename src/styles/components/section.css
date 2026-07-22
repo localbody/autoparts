@@ -20,7 +20,18 @@
     width: 50%;
 }
 
+
 @media (max-width: 1439px) {
+
+    .section__left,
+    .section__right {
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
 
     .section__left,
     .section__right {

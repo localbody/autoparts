@@ -41,7 +41,12 @@
 
 .header__logo-title {
     flex-shrink: 0;
+}
 
+@media (max-width: 800px) {
+    .header__logo-title {
+        display: none;
+    }
 }
 
 .header__wrapper {
@@ -71,6 +76,12 @@
     font-weight: 500;
     line-height: normal;
     flex-shrink: 0;
+}
+
+@media (max-width: 1799px) {
+    .header .phone:first-child {
+        display: none;
+    }
 }
 
 @media (max-width: 1365px) {
