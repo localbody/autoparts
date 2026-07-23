@@ -6,13 +6,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    z-index: 1000;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.body--overflow .header {
     z-index: 1;
 }
 
 @media (max-width: 1365px) {
     .header {
         padding-inline: 12px;
+        position: relative;
+        z-index: 1;
     }
 }
 
